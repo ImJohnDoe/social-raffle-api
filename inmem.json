@@ -1,0 +1,29 @@
+{
+  "ids": {
+    "Entry": 3,
+    "Vote": 3,
+    "Raffle": 2,
+    "Participant": 3,
+    "WinningEntry": 2
+  },
+  "models": {
+    "Entry": {
+      "1": "{\"cost\":\"string\",\"raffleId\":1,\"participantId\":1,\"entryId\":1}",
+      "2": "{\"cost\":\"woah Nelly\",\"raffleId\":1,\"participantId\":1,\"entryId\":2}"
+    },
+    "Vote": {
+      "1": "{\"participantId\":1,\"entryId\":1,\"voteId\":1}",
+      "2": "{\"isPositive\":true,\"participantId\":1,\"entryId\":1,\"voteId\":2}"
+    },
+    "Raffle": {
+      "1": "{\"name\":\"Memorable Quotes\",\"cost\":\"A quote\",\"description\":\"Submit a quote from memory, don't look one up!\",\"raffleId\":1}"
+    },
+    "Participant": {
+      "1": "{\"name\":\"John\",\"participantId\":1}",
+      "2": "{\"name\":\"Lula\",\"participantId\":2}"
+    },
+    "WinningEntry": {
+      "1": "{\"raffleId\":1,\"entryId\":1,\"winningEntryId\":1}"
+    }
+  }
+}
