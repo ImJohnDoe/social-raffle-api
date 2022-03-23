@@ -3,7 +3,7 @@ import {
   CountSchema,
   Filter,
   repository,
-  Where,
+  Where
 } from '@loopback/repository';
 import {
   del,
@@ -13,11 +13,11 @@ import {
   param,
   patch,
   post,
-  requestBody,
+  requestBody
 } from '@loopback/rest';
 import {
   Entry,
-  Vote,
+  Vote
 } from '../models';
 import {EntryRepository} from '../repositories';
 
@@ -61,7 +61,6 @@ export class EntryVoteController {
           schema: getModelSchemaRef(Vote, {
             title: 'NewVoteInEntry',
             exclude: ['voteId'],
-            optional: ['entryId']
           }),
         },
       },

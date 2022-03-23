@@ -61,11 +61,39 @@ npm run lint:fix
 - `npm run docker:build`: Build a Docker image for this application
 - `npm run docker:run`: Run this application inside a Docker container
 
-## Tests
+<!-- ## Tests
 
 ```sh
 npm test
+``` -->
+
+## Use the Application (via swagger)
+
+Try this filter body in GET /raffles
 ```
+{
+  "include": [
+    {
+      "relation": "entries",
+      "scope": {
+        "include": [
+          {
+            "relation": "votes"
+          },
+          {
+            "relation": "participant"
+          }
+        ]
+      }
+    },
+    {
+      "relation": "winningEntries"
+    }
+  ]
+}
+```
+
+Come back to the `GET /raffles` query while playing with the api explorer at http://localhost:3000/explorer
 
 ## What's next
 

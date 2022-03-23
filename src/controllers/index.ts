@@ -7,3 +7,5 @@ export * from './participant.controller';
 export * from './raffle.controller';
 export * from './raffle-entry.controller';
 export * from './winning-entry.controller';
+export * from './vote-participant.controller';
+export * from './vote-entry.controller';

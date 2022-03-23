@@ -1,0 +1,28 @@
+{
+  "ids": {
+    "Raffle": 2,
+    "Entry": 3,
+    "WinningEntry": 2,
+    "Participant": 3,
+    "Vote": 2
+  },
+  "models": {
+    "Raffle": {
+      "1": "{\"name\":\"Memorable Quotes\",\"cost\":\"A Quote\",\"description\":\"Submit quotes from memory. Don't use the internet!\",\"raffleId\":1}"
+    },
+    "Entry": {
+      "1": "{\"cost\":\"War, what is it good for? Absolutely nothing\",\"raffleId\":1,\"participantId\":1,\"entryId\":1}",
+      "2": "{\"cost\":\"I've got a bad feelings about this\",\"raffleId\":1,\"participantId\":2,\"entryId\":2}"
+    },
+    "WinningEntry": {
+      "1": "{\"raffleId\":1,\"entryId\":1,\"winningEntryId\":1}"
+    },
+    "Participant": {
+      "1": "{\"name\":\"Carrie\",\"participantId\":1}",
+      "2": "{\"name\":\"Ada\",\"participantId\":2}"
+    },
+    "Vote": {
+      "1": "{\"isPositive\":true,\"participantId\":2,\"entryId\":1,\"voteId\":1}"
+    }
+  }
+}

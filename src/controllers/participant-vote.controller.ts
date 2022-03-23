@@ -3,7 +3,7 @@ import {
   CountSchema,
   Filter,
   repository,
-  Where,
+  Where
 } from '@loopback/repository';
 import {
   del,
@@ -13,11 +13,11 @@ import {
   param,
   patch,
   post,
-  requestBody,
+  requestBody
 } from '@loopback/rest';
 import {
   Participant,
-  Vote,
+  Vote
 } from '../models';
 import {ParticipantRepository} from '../repositories';
 
@@ -61,7 +61,6 @@ export class ParticipantVoteController {
           schema: getModelSchemaRef(Vote, {
             title: 'NewVoteInParticipant',
             exclude: ['voteId'],
-            optional: ['participantId']
           }),
         },
       },

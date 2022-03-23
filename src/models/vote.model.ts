@@ -1,4 +1,6 @@
-import {Entity, model, property} from '@loopback/repository';
+import {Entity, model, property, belongsTo} from '@loopback/repository';
+import {Participant} from './participant.model';
+import {Entry} from './entry.model';
 
 @model()
 export class Vote extends Entity {
@@ -14,15 +16,11 @@ export class Vote extends Entity {
   })
   isPositive: boolean;
 
-  @property({
-    type: 'number',
-  })
-  participantId?: number;
+  @belongsTo(() => Participant)
+  participantId: number;
 
-  @property({
-    type: 'number',
-  })
-  entryId?: number;
+  @belongsTo(() => Entry)
+  entryId: number;
 
   constructor(data?: Partial<Vote>) {
     super(data);
